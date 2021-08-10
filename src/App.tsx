@@ -86,7 +86,7 @@ function App() {
   console.log(userAnswer.length, TOTAL_QUESTON, 'userans', number !== TOTAL_QUESTON - 1)
   return (
     <div className="App">
-      <h1 className={classes.heading}>Quiz app</h1>
+      <h1 className={classes.heading}>Quiz app kjjk</h1>
       {gameOver || userAnswer.length === TOTAL_QUESTON ? <Button variant="contained" onClick={startQiz} color="primary">
         Start
       </Button> : null}
