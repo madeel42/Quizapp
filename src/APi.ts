@@ -15,10 +15,10 @@ export const fetchQuestions = async () => {
     const endPoint = 'https://opentdb.com/api.php?amount=10&category=18&type=multiple'
     const questions = await (await fetch(endPoint)).json();
 
-    return questions.results.map((question:Questions)=>{
+    return questions.results.map((question: Questions) => {
         return {
             ...question,
-            answers: suffleArray([...question.incorrect_answers,question.correct_answer])
+            answers: suffleArray([...question.incorrect_answers, question.correct_answer])
         }
     })
 }

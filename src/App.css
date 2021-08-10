@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
 }
-
+h1,p{
+  padding: 0;
+  margin: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
